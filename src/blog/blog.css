@@ -1,5 +1,45 @@
 body {
     height: 100%;
     width: 100%;
-    background: firebrick;
+    background: dimgrey;
+}
+.main-container {
+    height: 100%;
+    width: 100%;
+}
+.blogs-container {
+    display: block;
+    height: 100%;
+    width: 50%;
+    border-radius: .438em;
+    margin: 5% 25% 0;
+}
+.blog {
+    height: 100%;
+    width: 100%;
+    border-radius: .438em;
+    background: rgb(255, 255, 193);
+    padding: .6em .8em;
+    margin: 0 0 .6em;
+    transition: all .2s;
+
+}
+.blog:hover {
+    margin: 0 0 .4em .4em;
+    filter: drop-shadow(-.4em .4em .4em rgb(37, 37, 37));
+}
+.title {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: black;
+    text-align: left;
+}
+.date {
+    color: rgb(41, 41, 41);
+    text-align: left;
+    padding: .5em 0;
+}
+.content {
+    color: black;
+    text-align: justify;
 }
