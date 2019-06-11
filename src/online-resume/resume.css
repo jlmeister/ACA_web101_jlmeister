@@ -1,0 +1,19 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  display: grid;
+  grid-template-columns: 20vw 80vw;
+}
+div {
+  display: inline-block;
+}
+.profile-pic {
+border-radius: 50%;
+width: 15vw;
+height: 15vw;
+}
+.resume-title {
+  align-content: center;
+  justify-content: center;
+}
