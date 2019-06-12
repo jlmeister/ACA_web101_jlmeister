@@ -1,19 +1,61 @@
 body {
   font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  width: 100vw;
 }
 header {
-  display: grid;
-  grid-template-columns: 20vw 80vw;
+  height: 30%;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0));
 }
-div {
-  display: inline-block;
+.header-container {  
+display: inline-block;
+height: 100%;
+width: 25%;
 }
-.profile-pic {
-border-radius: 50%;
-width: 15vw;
-height: 15vw;
+.header-image {
+  border-radius: 50%;
+  height: 100%;
+  float: right;
 }
-.resume-title {
-  align-content: center;
-  justify-content: center;
+.title-container {
+display: inline-block;
+height: 100%;
+width: 75%;
+float: right;
+position: relative;
+}
+.title-container > * {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -45%;
+  margin-bottom: -50%;
+}
+.title-container h1 {
+  top: 35%;
+}
+.title-container h2 {
+  top: 55%;
+}
+.main-section {
+  height: 70%;
+  width: 100%;
+  padding-top: 10px;
+}
+.left-side {
+  width: 45vw;
+  float: left;
+}
+.right-side {
+  width: 45vw;
+  float: right;
+}
+h1 {
+  
+}
+hr {
+  width: 35%;
+  margin: 0;
 }
