@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grid1
+{
+  height: 600px;
+  width: 500px;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 90px calc(100%-180px) 90px;
+}
+.header-left {
+  grid-area: header-left;
+}
+.header-right {
+  grid-area: header-right;
+}
+.body-left {
+  grid-area: body-left;
+}
+.body-right {
+  grid-area: body-right;
+}
+.footer {
+  grid-area: footer;
+}
