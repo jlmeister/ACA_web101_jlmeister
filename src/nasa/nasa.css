@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* .border1 {
+  border: 1px solid red;
+}
+.border2 {
+  border: 1px solid blue;
+}
+.border3 {
+  border: 1px solid green;
+} */
+body {
+  height: 100%;
+  width: 100%;
+}
+.main-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.flex-head {
+  /* height: 70%; */
+  flex: 7;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-top {
+  background-image: url("../images/galaxy.jpg");
+  background-repeat: round;
+}
+.flex-card {
+  /* height: 30%; */
+  flex: 3;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  background: lightgray;
+}
+.social, .office, .contact {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex: 1 196px;
+  padding: 20px;
+}
+h1 {
+  color: white;
+  font-size: 5em;
+}
+div ul {
+  list-style: none;
+}
+div h2 {
+  margin-bottom: .75em;
+}
+input[type=text] {
+  margin-bottom: 10px;
+}
+input[type=button] {
+  background: #444;
+  color: white;
+  padding: .5em .75em;
+  text-transform: uppercase;
+}
+@media (max-width: 588px) {
+  .flex-head {
+    /* height: 50%; */
+    flex: 1;
+    padding: 30px;
+  }
+  .flex-card {
+    /* height: 50%; */
+    flex: 1;
+    flex-flow: row wrap;
+  }
+}
+@media (max-width: 392px) {
+  .flex-head {
+    flex: 1;
+  }
+  .flex-card {
+    flex: 2;
+  }
+}
