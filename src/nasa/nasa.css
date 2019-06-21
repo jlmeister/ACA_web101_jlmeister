@@ -31,7 +31,7 @@ body {
   align-items: center;
 }
 .img-top {
-  background-image: url("../images/galaxy.jpg");
+  background-image: url("./images/galaxy.jpg");
   background-repeat: round;
 }
 .flex-card {
