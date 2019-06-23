@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 14px; /* root font size */
+}
 body {
   height: 100%;
   width: 100%;
@@ -16,6 +19,12 @@ body {
 .border3 {
   border: 1px solid blueviolet;  
 } */
+
+
+
+/* 
+define top level containers
+ */
 .big-grid {
   /* height: 600px;
   width: 500px; */
@@ -32,7 +41,6 @@ body {
 }
 .header-left {
   grid-area: header-left;
-  /* background: red; */
   display: flex;
   flex-direction: column;
 }
@@ -46,7 +54,6 @@ body {
   background: green;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 1rem;
 }
 .body-right {
   grid-area: body-right;
@@ -55,10 +62,14 @@ body {
 }
 .footer {
   grid-area: footer;
+  display: flex;
+  flex-direction: column;
   background: pink;
 }
 
-
+/* 
+define header containers
+ */
 .left-top, .left-bottom {
   display: flex;
   flex-flow: row wrap;
@@ -79,26 +90,94 @@ body {
   flex: 1;
 }
 
-/* .l1, .l2, .l3, .l4, .l5, .l6, .l7 {
-  border: solid 1px black;
-  padding: 20px;
+/* 
+define body-left containers
+ */
+.l1, .l2, .l3 {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  /* border: solid 1px black;
+  padding: 20px; */
 }
-.bg {
-  background-image: url(./images/fruit.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 200px;
-} */
+.l4, .l5, .l6, .l7 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.l1, .l2 {
+  grid-template-rows: 60% 20% 20%;
+}
+.l3, .l4, .l5, .l6, .l7 {
+  grid-template-rows: 50% 25% 25%;
+}
+.l1 {
+  grid-template-areas: "pic pic"
+                       "pic promo"
+                       "desc promo";
+}
+.l2 {
+  grid-template-areas: "tagline tagline"
+                       "tagline tagline"
+                       "sub sub";
+}
+.l3, .l5 {
+  grid-template-areas: "pic pic"
+                       "pic promo"
+                       "desc promo";
+}
+.l4, .l6, .l7 {
+  grid-template-areas: "pic pic"
+                       "pic pic"
+                       "desc promo";
+}
 
-
+/* define body-right containers */
 .r1, .r2, .r3 {
   flex: 1;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 25% 25%;
   border: dashed 3px black;
+}
+.r1 {
+  grid-template-areas: "pic desc"
+                       "pic promo"
+                       "pic promo";
 }
 .r2 {
   border-top: 0;
   border-bottom: 0;
+  grid-template-areas: "pic promo"
+                       "pic promo"
+                       "desc promo";
 }
+.r3 {
+  grid-template-areas: "pic pic"
+                       "desc promo"
+                       "desc promo";
+}
+
+/* define footer containers */
+.f1, .f2, .f3, .f4 {
+  flex: 1;
+}
+.f1 {
+  display: flex;
+  flex-direction: column;
+}
+.f2, .f3, .f4 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 60% 40%;
+}
+.f2 {
+  grid-template-areas: "pic desc"
+                       "pic promo";
+}
+.f3, .f4 {
+  grid-template-areas: "pic pic"
+                       "desc promo";
+}
+
 
 .save {
   color: white;
@@ -107,4 +186,45 @@ body {
 .marketing {
   color: white;
   background-color: #63ADBB;
+}
+.bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+.dried-fruit {
+  background-image: url(./images/fruit.png);
+}
+.chips {
+  background-image: url(./images/chips.png);
+}
+.tea {
+  background-image: url(./images/tea.png);
+}
+.nuts {
+  background-image: url(./images/nuts.png);
+}
+.chobani {
+  background-image: url(./images/chobani.png);
+}
+.chocolate {
+  background-image: url(./images/chocs.png);
+}
+.wine {
+  background-image: url(./images/wine.png);
+}
+.bjs {
+  background-image: url(./images/bjs.png);
+}
+.ramen {
+  background-image: url(./images/ramen.png);
+}
+.coffee {
+  background-image: url(./images/coffee.png);
+}
+.coke {
+  background-image: url(./images/coke.png);
+}
+.monster {
+  background-image: url(./images/monster.png);
 }
