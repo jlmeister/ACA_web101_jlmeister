@@ -54,6 +54,7 @@ define top level containers
   background: green;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 250px;
 }
 .body-right {
   grid-area: body-right;
@@ -96,8 +97,8 @@ define body-left containers
 .l1, .l2, .l3 {
   display: grid;
   grid-template-columns: 60% 40%;
-  /* border: solid 1px black;
-  padding: 20px; */
+  border: solid 1px black;
+  padding: 20px;
 }
 .l4, .l5, .l6, .l7 {
   display: grid;
@@ -187,10 +188,17 @@ define body-left containers
   color: white;
   background-color: #63ADBB;
 }
-.bg-img {
+.pic {
+  grid-area: pic;
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
+}
+.desc {
+  grid-area: desc;
+}
+.promo {
+  grid-area: promo;
 }
 .dried-fruit {
   background-image: url(./images/fruit.png);
