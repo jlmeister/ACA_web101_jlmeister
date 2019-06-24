@@ -15,6 +15,8 @@ html {
 .border3 {
   border: solid 1px green;
 }
+
+/* Set up top level containers */
 body {
   height: 100%;
   width: 100%;
@@ -35,6 +37,7 @@ header {
 .main-container {
   grid-area: main;
   display: grid;
+  font-size: 1rem;
 }
 .sidebar {
   display: none;
@@ -42,6 +45,29 @@ header {
 .footer {
   grid-area: footer;
   display: flex;
+}
+
+/* Format dashboard cards */
+.dash-item {
+  font-size: 1em;
+  display: grid;
+  grid-template-rows: 8rem 3rem 1.5rem;
+  font-weight: 800;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Format individual card content */
+.sales {
+  background: rgba(255, 255, 255, 0.473);
+}
+.sales .chart {
+  background-image: linear-gradient(to top right, #478B6D, #6ac75e);
+  border-radius: 5px;
+}
+
+.good {
+  color: #478B6D;
 }
 @media (min-width: 768px) {
   .main-container {
