@@ -6,7 +6,7 @@
 html {
   font-size: 14px;
 }
-.border1 {
+/* .border1 {
   border: solid 1px red;
 }
 .border2 {
@@ -14,7 +14,7 @@ html {
 }
 .border3 {
   border: solid 1px green;
-}
+} */
 
 /* Set up top level containers */
 body {
@@ -24,6 +24,8 @@ body {
   grid-template-columns: 100%;
   grid-template-rows: 80px auto 80px;
   grid-template-areas: "header" "main" "footer";
+  background: #1A2033;
+  color: rgba(255, 255, 255, 0.719);
 }
 header {
   font-size: 1.25rem;
@@ -33,10 +35,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  margin-bottom: 30px;
 }
 .main-container {
   grid-area: main;
   display: grid;
+  grid-gap: 1em;
   font-size: 1rem;
 }
 .sidebar {
@@ -47,27 +51,47 @@ header {
   display: flex;
 }
 
-/* Format dashboard cards */
-.dash-item {
-  font-size: 1em;
+/* Format dashboard card layout, dimensions, font, colors */
+.main-container > * {
+  font-size: .75em;
+  border-radius: 5px;
+  padding: 20px;
+  background: rgba(178, 172, 255, 0.103);
+  margin: 0 20px 40px;
+}
+.chart-card {
   display: grid;
   grid-template-rows: 8rem 3rem 1.5rem;
-  font-weight: 800;
-  padding: 20px;
-  margin-bottom: 20px;
+}
+.dash-item {
+  display: flex;
+  flex-direction: column;
+}
+.dash-list {
+  display: flex;
+  flex-direction: column;
+}
+.chart-card .chart {
+  border-radius: 5px;
+  margin: -40px 0 40px;
 }
 
 /* Format individual card content */
-.sales {
-  background: rgba(255, 255, 255, 0.473);
-}
 .sales .chart {
   background-image: linear-gradient(to top right, #478B6D, #6ac75e);
-  border-radius: 5px;
+}
+.exercise .chart {
+  background-image: linear-gradient(to top right, #FF7900, #F09B38);
+}
+.completed .chart {
+  background-image: linear-gradient(to top right, #BF3B30, #EF473F);
 }
 
 .good {
   color: #478B6D;
+}
+.alert {
+  color: #FF7900;
 }
 @media (min-width: 768px) {
   .main-container {
