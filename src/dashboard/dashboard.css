@@ -66,11 +66,6 @@ header {
   flex-direction: column;
   justify-content: space-between;
 }
-.list-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
 .chart-card .chart {
   border-radius: 5px;
   height: 12em;
@@ -105,6 +100,20 @@ header {
 hr {
   margin-bottom: 20px;
   border: inset 1px rgba(178, 172, 255, 0.103);
+}
+.list-card {
+  display: flex;
+  flex-direction: column;
+}
+.list-card .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  /* margin-top: -40px; */
+}
+.list-card .data {
+  display: grid;
 }
 .item-card hr {
   align-self: normal;
