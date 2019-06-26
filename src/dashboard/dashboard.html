@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./dashboard.css">
 </head>
@@ -22,9 +23,10 @@
           Daily Sales
         </h2>
         <p class="status"><span class="good"><i class="fa fa-long-arrow-up" aria-hidden="true"></i> 55%</span> increase in today's sales.</p>
-      </div>
-      <div class="timestamp">
-        <i class="fa fa-clock-o" aria-hidden="true"></i> updated 4 minutes ago
+        <hr>
+        <div class="message">
+          <i class="fa fa-clock-o" aria-hidden="true"></i> updated 4 minutes ago
+        </div>
       </div>
     </div>
     <div class="chart-card exercise border2">
@@ -34,9 +36,10 @@
           Email Subscriptions
         </h2>
         <p class="status">Last Campaign Performance</p>
-      </div>
-      <div class="timestamp">
-        <i class="fa fa-clock-o" aria-hidden="true"></i> campaign sent 2 days ago
+        <hr>
+        <div class="message">
+          <i class="fa fa-clock-o" aria-hidden="true"></i> campaign sent 2 days ago
+        </div>
       </div>
     </div>
     <div class="chart-card completed border2">
@@ -46,27 +49,60 @@
           Completed Tasks
         </h2>
         <p class="status">Last Campaign Performance</p>
-      </div>
-      <div class="timestamp">
-        <i class="fa fa-clock-o" aria-hidden="true"></i> campaign sent 2 days ago
-      </div>
-    </div>
-    <div class="dash-item water border2">
-      <div class="chart"></div>
-      <div class="label">
-        <h2 class="description">
-          Used Space
-        </h2>
-        <p class="status">49/50 GB</p>
-      </div>
-      <div class="alert"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Get More Space...
+        <hr>
+        <div class="message">
+          <i class="fa fa-clock-o" aria-hidden="true"></i> campaign sent 2 days ago
+        </div>
       </div>
     </div>
-    <div class="dash-item income border2"></div>
-    <div class="dash-item bugfix border2"></div>
-    <div class="dash-item social border2"></div>
-    <div class="dash-list users border2"></div>
-    <div class="dash-list tasks border2"></div>
+    <div class="item-card water border2">
+      <div class="icon"><i class="fa fa-clone" aria-hidden="true"></i>
+      </div>
+      <h2 class="description">
+        Used Space
+      </h2>
+      <p class="status">49/50 GB</p>
+      <hr>
+      <div class="alert message"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Get More Space...
+      </div>
+    </div>
+    <div class="item-card income border2">
+      <div class="icon"><i class="fa fa-line-chart" aria-hidden="true"></i>
+      </div>
+      <h2 class="description">
+        Revenue
+      </h2>
+      <p class="status">$34,245</p>
+      <hr>
+      <div class="message"><i class="fa fa-calendar" aria-hidden="true"></i> Last 24 Hours
+      </div>
+    </div>
+    <div class="item-card bugfix border2">
+      <div class="icon fa-stack">
+        <i class="fa fa-circle-thin fa-stack-2x" aria-hidden="true"></i>
+        <i class="fa fa-info fa-stack-1x" aria-hidden="true"></i>
+     </div>
+      <h2 class="description">
+        Fixed Issues
+      </h2>
+      <p class="status">75</p>
+      <hr>
+      <div class="message"><i class="fa fa-github" aria-hidden="true"></i> Tracked from Github
+      </div>
+    </div>
+    <div class="item-card social border2">
+      <div class="icon"><i class="fa fa-twitter" aria-hidden="true"></i>
+      </div>
+      <h2 class="description">
+        Followers
+      </h2>
+      <p class="status">+245</p>
+      <hr>
+      <div class="message"><i class="fa fa-clock-o" aria-hidden="true"></i> Just Updated
+      </div>
+    </div>
+    <div class="list-card users border2"></div>
+    <div class="list-card tasks border2"></div>
   </div>
   <div class="sidebar border1"></div>
   <footer class="border1"></footer>
