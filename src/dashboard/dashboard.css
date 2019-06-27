@@ -105,16 +105,14 @@ hr {
   display: flex;
   flex-direction: column;
 }
-.list-card .description {
+/* .list-card .data {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  /* margin-top: -40px; */
 }
-.list-card .data {
-  display: grid;
-}
+.list-card .data > div {
+  display: flex;
+  flex-direction: row;
+} */
 .item-card hr {
   align-self: normal;
 }
@@ -133,6 +131,31 @@ hr {
 }
 .item-card .message {
   align-self: flex-start;
+}
+.list-card .description {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around;
+  align-items: flex-start; */
+  border-radius: 5px;
+  /* height: 10em; */
+  margin: -40px 0 20px;
+  padding: 20px 20px;
+}
+.list-card .data {
+  display: grid;
+  grid-template-columns: 1fr 5fr 3fr 4fr;
+  grid-auto-flow: row;
+}
+.list-card .data hr {
+  grid-column: span 5;
+  margin-bottom: 8px;
+}
+.list-card .data div {
+  margin-bottom: 8px;
+}
+.list-card .data .last-row {
+  margin-bottom: 0;
 }
 
 /* Format individual card content */
@@ -156,6 +179,13 @@ hr {
 }
 .social .icon {
   background-image: linear-gradient(to top right, rgb(60, 143, 175), #55bfb6);
+}
+.users .description {
+  background-image: linear-gradient(to top right, #71269C, #864398);
+  color: white;
+}
+.users .description .title {
+  margin-bottom: 10px;
 }
 .bugfix .icon .fa-stack-1x {
   font-size: 2em;
