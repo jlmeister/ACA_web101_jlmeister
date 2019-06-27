@@ -26,7 +26,6 @@ body {
   grid-template-rows: 120px auto 80px;
   grid-template-areas: "header" "main" "footer";
   background: #1A2033;
-  /* color: rgba(255, 255, 255, 0.719); */
   color: rgba(255, 255, 255, 0.507);
 }
 header {
@@ -42,15 +41,19 @@ header {
 .main-container {
   grid-area: main;
   display: grid;
-  grid-gap: 1em;
   font-size: 1rem;
 }
 .sidebar {
   display: none;
 }
-.footer {
+footer {
+  font-size: .75rem;
   grid-area: footer;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
 }
 
 /* Format dashboard card layout, dimensions, font, colors */
@@ -59,12 +62,10 @@ header {
   border-radius: 5px;
   padding: 20px;
   background: rgba(178, 172, 255, 0.103);
-  margin: 0 20px 40px;
+  margin: 0 20px 80px;
 }
-.chart-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.chart-card:first-child {
+  margin-top: 20px;
 }
 .chart-card .chart {
   border-radius: 5px;
@@ -73,8 +74,6 @@ header {
 }
 .chart-card .label {
   height: 8em;
-  display: flex;
-  flex-direction: column;
 }
 .chart-card .label .description {
   margin-bottom: .35em;
@@ -98,21 +97,9 @@ header {
   margin-top: -40px;
 }
 hr {
-  margin-bottom: 20px;
+  margin-bottom: 1.5em;
   border: inset 1px rgba(178, 172, 255, 0.103);
 }
-.list-card {
-  display: flex;
-  flex-direction: column;
-}
-/* .list-card .data {
-  display: flex;
-  flex-direction: column;
-}
-.list-card .data > div {
-  display: flex;
-  flex-direction: row;
-} */
 .item-card hr {
   align-self: normal;
 }
@@ -132,13 +119,8 @@ hr {
 .item-card .message {
   align-self: flex-start;
 }
-.list-card .description {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-around;
-  align-items: flex-start; */
+.list-card .head {
   border-radius: 5px;
-  /* height: 10em; */
   margin: -40px 0 20px;
   padding: 20px 20px;
 }
@@ -151,7 +133,7 @@ hr {
   grid-column: span 5;
   margin-bottom: 8px;
 }
-.list-card .data div {
+.list-card .data > * {
   margin-bottom: 8px;
 }
 .list-card .data .last-row {
@@ -180,12 +162,39 @@ hr {
 .social .icon {
   background-image: linear-gradient(to top right, rgb(60, 143, 175), #55bfb6);
 }
-.users .description {
+.users .head {
+  display: flex;
+  flex-direction: column;
   background-image: linear-gradient(to top right, #71269C, #864398);
   color: white;
 }
-.users .description .title {
+.users .head .title {
   margin-bottom: 10px;
+}
+.tasks .head {
+  background-image: linear-gradient(to top right, #FF7900, #F09B38);
+  color: white;
+  font-size: 1.5em;
+}
+.tasks .head .title {
+  float: left;
+  padding: 10px 10px 10px 0;
+}
+.tasks .head .task-menu {
+display: flex;
+flex-flow: row wrap;
+list-style: none;
+}
+.tasks .head .task-menu .task-type {
+  padding: 10px;
+}
+.tasks .head .task-menu .task-type:hover {
+  background-color: rgba(255, 255, 255, 0.11);
+}
+.tasks .data {
+  grid-template-columns: 1fr 10fr 1fr 1fr;
+  align-items: center;
+  column-gap: 15px;
 }
 .bugfix .icon .fa-stack-1x {
   font-size: 2em;
@@ -193,27 +202,66 @@ hr {
 .bugfix .icon .fa-stack-2x {
   font-size: 4em;
 }
-
 .good {
   color: #478B6D;
 }
 .alert {
   color: #FF7900;
 }
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.507);
+}
+a:visited {
+  color: rgba(255, 255, 255, 0.507);
+}
+a:hover {
+  color: white;
+}
 @media (min-width: 768px) {
   .main-container {
     grid-template-columns: 50% 50%;
   }
+  .chart-card, .list-card {
+    grid-column: span 2;
+  }
+  footer {
+    justify-content: flex-start;
+  }
+  footer a {
+    margin-right: 25px;
+  }
 }
-@media (min-width: 1024px) {
+@media (min-width: 960px) {
   body {
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 300px auto;
     grid-template-areas: "sidebar header"
                          "sidebar main"
                          "sidebar footer";
   }
   .sidebar {
     grid-area: sidebar;
+    display: block;
+    background: rgba(178, 172, 255, 0.103);
+  }
+  .sidebar > .author {
+    height: 90px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sidebar li {
+    list-style: none;
+  }
+  .sidebar a {
+    border-radius: 5px;
+    height: 40px;
+    margin: 0 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sidebar a:hover {
+    background-image: linear-gradient(to top right, #71269c, #864398);
   }
 }
