@@ -144,13 +144,13 @@ hr {
 .sales .chart {
   background-image: linear-gradient(to top right, #478B6D, #6ac75e);
 }
-.exercise .chart {
+.subscription .chart {
   background-image: linear-gradient(to top right, #FF7900, #F09B38);
 }
 .completed .chart {
   background-image: linear-gradient(to top right, #a7372d, #EF473F);
 }
-.water .icon {
+.space .icon {
   background-image: linear-gradient(to top right, #FF7900, #F09B38);
 }
 .income .icon {
