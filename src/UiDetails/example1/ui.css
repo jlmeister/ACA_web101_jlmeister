@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+nav {
+  width: 60%;
+  margin: 20px auto 0;
+  border-top: 3px solid #54B5AB;
+}
+nav ul {
+  display: flex;
+  width: 100%;
+}
+nav ul a {
+  width: 25%;
+}
+nav ul a li {
+  padding: 20px 0;
+  color: #000;
+  border-bottom: 1px solid #888;
+  list-style: none;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a li i {
+  color: #888;
+}
+a:focus li i {
+  color: #54B5AB;
+}
+li:hover {
+  border-bottom: 1px solid #54B5AB;
+  background: #f9f9f9;
+}

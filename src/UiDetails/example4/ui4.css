@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div {
+  display: flex;
+}
+a {
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 3px 3px #ddd;
+}
+.b1 {
+  background-color: hsl(249, 32%, 48%);
+}
+.b2 {
+  color: hsl(249, 32%, 48%);
+}
+a:hover {
+
+}
