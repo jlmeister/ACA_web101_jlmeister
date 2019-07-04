@@ -1,3 +1,23 @@
+/* 
+what's important here is you tried... lol! nah, you had the right idea. this was a tough one. 
+notes would be, toss it and start all over. 
+ignore the images and text for now. get the grid set. 
+a suggested start below. adjust to your liking
+.big-grid {
+  display: grid;
+  grid-template-rows: 15% 1fr 25%;
+  grid-template-columns: 76% 24%;
+}
+.header-left {
+  grid-row: 1/2;
+  grid-column: 1/2
+}
+.header-right {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+and you can figure out the rest. I'll be sharing my code this week so you have a reference.
+ */
 * {
   margin: 0;
   padding: 0;
