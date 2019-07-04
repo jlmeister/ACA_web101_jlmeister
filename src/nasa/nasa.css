@@ -1,3 +1,4 @@
+/* dude, you're a beast just in general. you love this stuff and it shows. good work. very clean, very efficient. */
 * {
   margin: 0;
   padding: 0;
@@ -59,6 +60,7 @@ div ul {
 div h2 {
   margin-bottom: .75em;
 }
+/* oooo accessing by attribute! 🔥🔥🔥 */
 input[type=text] {
   margin-bottom: 10px;
 }
