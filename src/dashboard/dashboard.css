@@ -1,3 +1,9 @@
+/* 
+  This is very good! from coupons to this -- a 180! 
+  Great work. really nothing to change/nothing to add! 
+  Be proud of yourself! 
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -70,6 +76,11 @@ footer {
 .chart-card .chart {
   border-radius: 5px;
   height: 12em;
+  /* 
+  love this feature. 
+  another way to do this is with position: absolute. 
+  but no changes needed. it works!
+  */
   margin: -40px 0 20px;
 }
 .chart-card .label {
