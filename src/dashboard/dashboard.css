@@ -1,0 +1,278 @@
+/* 
+  This is very good! from coupons to this -- a 180! 
+  Great work. really nothing to change/nothing to add! 
+  Be proud of yourself! 
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+}
+/* .border1 {
+  border: solid 1px red;
+}
+.border2 {
+  border: solid 1px blue;
+}
+.border3 {
+  border: solid 1px green;
+} */
+
+/* Set up top level containers */
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 120px auto 80px;
+  grid-template-areas: "header" "main" "footer";
+  background: #1A2033;
+  color: rgba(255, 255, 255, 0.507);
+}
+header {
+  font-size: 1.15rem;
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  margin-bottom: 30px;
+}
+.main-container {
+  grid-area: main;
+  display: grid;
+  font-size: 1rem;
+}
+.sidebar {
+  display: none;
+}
+footer {
+  font-size: .75rem;
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+/* Format dashboard card layout, dimensions, font, colors */
+.main-container > * {
+  font-size: .75em;
+  border-radius: 5px;
+  padding: 20px;
+  background: rgba(178, 172, 255, 0.103);
+  margin: 0 20px 80px;
+}
+.chart-card:first-child {
+  margin-top: 20px;
+}
+.chart-card .chart {
+  border-radius: 5px;
+  height: 12em;
+  /* 
+  love this feature. 
+  another way to do this is with position: absolute. 
+  but no changes needed. it works!
+  */
+  margin: -40px 0 20px;
+}
+.chart-card .label {
+  height: 8em;
+}
+.chart-card .label .description {
+  margin-bottom: .35em;
+}
+.chart-card .label .status {
+  margin-bottom: 1.5em;
+}
+.item-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.item-card .icon {
+  border-radius: 5px;
+  height: 8em;
+  width: 8em;
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+}
+hr {
+  margin-bottom: 1.5em;
+  border: inset 1px rgba(178, 172, 255, 0.103);
+}
+.item-card hr {
+  align-self: normal;
+}
+.item-card .icon .fa {
+  font-size: 3.5em;
+  color: white;
+}
+.item-card .description {
+  font-size: 1.5em;
+  padding-bottom: .5em;
+  margin-top: -45px;
+}
+.item-card .status {
+  font-size: 2.5em;
+  margin-bottom: 0.4em;
+}
+.item-card .message {
+  align-self: flex-start;
+}
+.list-card .head {
+  border-radius: 5px;
+  margin: -40px 0 20px;
+  padding: 20px 20px;
+}
+.list-card .data {
+  display: grid;
+  grid-template-columns: 1fr 5fr 3fr 4fr;
+  grid-auto-flow: row;
+}
+.list-card .data hr {
+  grid-column: span 5;
+  margin-bottom: 8px;
+}
+.list-card .data > * {
+  margin-bottom: 8px;
+}
+.list-card .data .last-row {
+  margin-bottom: 0;
+}
+
+/* Format individual card content */
+.sales .chart {
+  background-image: linear-gradient(to top right, #478B6D, #6ac75e);
+}
+.subscription .chart {
+  background-image: linear-gradient(to top right, #FF7900, #F09B38);
+}
+.completed .chart {
+  background-image: linear-gradient(to top right, #a7372d, #EF473F);
+}
+.space .icon {
+  background-image: linear-gradient(to top right, #FF7900, #F09B38);
+}
+.income .icon {
+  background-image: linear-gradient(to top right, #478B6D, #6ac75e);
+}
+.bugfix .icon {
+  background-image: linear-gradient(to top right, #a7372d, #EF473F);
+}
+.social .icon {
+  background-image: linear-gradient(to top right, rgb(60, 143, 175), #55bfb6);
+}
+.users .head {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to top right, #71269C, #864398);
+  color: white;
+}
+.users .head .title {
+  margin-bottom: 10px;
+}
+.tasks .head {
+  background-image: linear-gradient(to top right, #FF7900, #F09B38);
+  color: white;
+  font-size: 1.5em;
+}
+.tasks .head .title {
+  float: left;
+  padding: 10px 10px 10px 0;
+}
+.tasks .head .task-menu {
+display: flex;
+flex-flow: row wrap;
+list-style: none;
+}
+.tasks .head .task-menu .task-type {
+  padding: 10px;
+}
+.tasks .head .task-menu .task-type:hover {
+  background-color: rgba(255, 255, 255, 0.11);
+}
+.tasks .data {
+  grid-template-columns: 1fr 10fr 1fr 1fr;
+  align-items: center;
+  column-gap: 15px;
+}
+.bugfix .icon .fa-stack-1x {
+  font-size: 2em;
+}
+.bugfix .icon .fa-stack-2x {
+  font-size: 4em;
+}
+.good {
+  color: #478B6D;
+}
+.alert {
+  color: #FF7900;
+}
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.507);
+}
+a:visited {
+  color: rgba(255, 255, 255, 0.507);
+}
+a:hover {
+  color: white;
+}
+@media (min-width: 768px) {
+  .main-container {
+    grid-template-columns: 50% 50%;
+  }
+  .chart-card, .list-card {
+    grid-column: span 2;
+  }
+  footer {
+    justify-content: flex-start;
+  }
+  footer a {
+    margin-right: 25px;
+  }
+}
+@media (min-width: 960px) {
+  body {
+    grid-template-columns: 300px auto;
+    grid-template-areas: "sidebar header"
+                         "sidebar main"
+                         "sidebar footer";
+  }
+  .sidebar {
+    grid-area: sidebar;
+    display: block;
+    background: rgba(178, 172, 255, 0.103);
+  }
+  .sidebar > .author {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sidebar li {
+    list-style: none;
+  }
+  .sidebar a {
+    border-radius: 5px;
+    height: 40px;
+    margin: 0 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sidebar a:hover {
+    background-image: linear-gradient(to top right, #71269c, #864398);
+  }
+}
