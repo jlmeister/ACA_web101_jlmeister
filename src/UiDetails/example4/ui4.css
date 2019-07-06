@@ -13,13 +13,17 @@ a {
   text-decoration: none;
   color: white;
   box-shadow: 0 3px 3px #ddd;
-}
-.b1 {
   background-color: hsl(249, 32%, 48%);
+  transition: 0.2s ease;
+
 }
 .b2 {
-  color: hsl(249, 32%, 48%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent
 }
 a:hover {
-
+  transform: translateY(-2px);
+  box-shadow: 0 5px 5px #ddd;
+  background-color: hsl(249, 32%, 60%);
 }
