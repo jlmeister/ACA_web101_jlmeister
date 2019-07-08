@@ -84,6 +84,7 @@ main p {
 .yellow {
   background: linear-gradient(to bottom, hsl(49, 92%, 71%) 0%,hsl(36, 93%, 73%) 100%);
   color: rgba(0, 0, 0, 0.6);
+  margin-right: .75rem;
 }
 .transparent {
   background: transparent;

@@ -2,28 +2,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', 'Open Sans', 'Roboto', sans-serif;
 }
 div {
   display: flex;
+  background: #f1f1f1;
 }
 a {
   margin: 20px;
-  padding: 10px 20px;
-  border-radius: 7px;
+  padding: 10px 30px;
+  border-radius: 5px;
   text-decoration: none;
-  color: white;
-  box-shadow: 0 3px 3px #ddd;
-  background-color: hsl(249, 32%, 48%);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   transition: 0.2s ease;
-
+}
+.b1 {
+  color: white;
+  background-color: hsl(235, 71%, 65%);
 }
 .b2 {
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent
+  color: hsl(235, 71%, 65%);
+  background: white;
 }
 a:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 5px #ddd;
-  background-color: hsl(249, 32%, 60%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  filter: brightness(130%);
 }

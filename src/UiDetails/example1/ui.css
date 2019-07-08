@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', 'Open Sans', 'Roboto', sans-serif;
 }
 body {
   height: 100%;
@@ -21,9 +22,10 @@ nav ul a {
 }
 nav ul a li {
   padding: 20px 0;
-  color: #000;
+  color: #555;
   border-bottom: 1px solid #888;
   list-style: none;
+  font-weight: bold;
   text-align: center;
 }
 a {
@@ -32,6 +34,9 @@ a {
 }
 a li i {
   color: #888;
+}
+a:focus li {
+  color: #333;
 }
 a:focus li i {
   color: #54B5AB;

@@ -11,20 +11,11 @@ body {
   width: 100%;
   height: 100%;
 }
-/* .border1 {
-  border: 1px solid red;
-}
-.border2 {
-  border: 1px solid blue;
-}
-.border3 {
-  border: 1px solid green;
-} */
 .fa, .title {
   color: #949CCF;
 }
 .fa {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .description {
   color: #888;
@@ -41,7 +32,7 @@ body {
   min-width: 250px;
   grid-template-columns: 2rem auto;
   grid-template-rows: 2rem auto;
-  gap: .75rem;
+  gap: .75rem 1.75rem;
   margin-bottom: 2rem;
 }
 .card:nth-child(2n-1) {
@@ -53,6 +44,7 @@ body {
 }
 .title {
   align-self: center;
+  font-size: 1.125rem;
 }
 .description {
   grid-row: 2;

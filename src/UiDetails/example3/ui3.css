@@ -2,27 +2,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', 'Open Sans', 'Roboto', sans-serif;
 }
 div {
   display: flex;
 }
 a {
   margin: 20px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   border-radius: 7px;
   text-decoration: none;
   color: white;
-  text-shadow: 0 1px 2px #333;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
+  ;
 }
 .b1 {
-  background-image: linear-gradient(to top, hsl(246, 100%, 50%), hsl(192, 100%, 50%));
+  background-image: linear-gradient(to top, hsl(208, 100%, 50%), hsl(192, 100%, 50%));
 }
 .b2 {
-  background-image: linear-gradient(to top, hsl(17, 100%, 50%), hsl(44, 100%, 50%));
+  background-image: linear-gradient(to top, hsl(30, 100%, 50%), hsl(44, 100%, 50%));
 }
 .b1:hover {
-  background-image: linear-gradient(to top, hsl(246, 100%, 40%), hsl(192, 100%, 40%));
+  background-image: linear-gradient(to top, hsl(208, 100%, 40%), hsl(192, 100%, 40%));
 }
 .b2:hover {
-  background-image: linear-gradient(to top, hsl(17, 100%, 40%), hsl(44, 100%, 40%));
+  background-image: linear-gradient(to top, hsl(30, 100%, 40%), hsl(44, 100%, 40%));
 }

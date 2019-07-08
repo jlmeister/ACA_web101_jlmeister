@@ -24,24 +24,29 @@ body {
 }
 .body-text {
   color: rgba(255, 255, 255, 0.664);
+  line-height: 1.5rem;
   margin-bottom: 2rem;
 }
 .field {
-  height: 2rem;
+  height: 2.25rem;
   border: none;
+  font-size: .75rem;
+  width: 15rem;
   border-radius: 4px 0 0 4px;
-  padding: 0 .5rem;
+  padding: 0 .75rem;
 }
 .field::placeholder {
   color: #bbb;
 }
 .button {
-  height: 2rem;
+  height: 2.25rem;
   border: none;
   border-radius: 0 4px 4px 0;
+  font-size: .75rem;
+  font-weight: bold;
   background: hsl(43, 61%, 72%);
   color: rgba(0, 0, 0, 0.6);
-  padding: 0 .5rem;
+  padding: 0 1rem;
   margin-left: -.25rem;
   cursor: pointer;
 }
