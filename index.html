@@ -10,7 +10,7 @@
   <title>My Portfolio</title>
 </head>
   <body>
-    <video src="./media/network.mp4" class="bg-video" width="1920" height="1080" autoplay loop muted playsinline></video>
+    <video src="./media/network2.mp4" class="bg-video" autoplay loop muted playsinline></video>
     <div class="bg-color"></div>
     <header>
       <nav>
@@ -18,27 +18,26 @@
         <a href="#">Blog</a>
         <a href="#">Projects</a>
         <a href="#">Resume</a>
-        <a href="#">Contact Me</a>
+        <!-- <a href="#">Contact Me</a> -->
       </nav>
     </header>
     <main>
       <h1 class="title">Jordan Meister</h1>
       <hr>
       <p class="subtitle">Student<br>Full Stack Web Development</p>
+      <!-- <div class="image-border">
+        <img src="./media/myProfilePic.jpeg" alt="A portrait photo of me">
+      </div> -->
     </main>
     <form action="">
-      <div>
-        <label for="name">Name:</label>
-        <input type="text" name="username" placeholder="Full Name">
-      </div>
-      <div>
-        <label for="email">email:</label>
-        <input type="email" name="user_mail" placeholder="email">
-      </div>
-      <div>
-        <label for="message">Message:</label>
-        <textarea name="user_message" id="message" placeholder="Type your message here"></textarea>
-      </div>
+      <h1>Contact Me</h1>
+      <label for="name">name:</label>
+      <input type="text" name="username" placeholder="required" required>
+      <label for="email">email:</label>
+      <input type="email" name="user_mail" placeholder="required" required>
+      <label for="message">message:</label>
+      <textarea name="user_message" id="message" placeholder="Type your message here"></textarea>
+      <input type="submit" value="Send">
     </form>
   </body>
 </html>
