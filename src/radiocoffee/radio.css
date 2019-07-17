@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+header {
+  display: flex;
+  background: gray;
+}
+main {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+.parallax-hero {
+  height: 100vh;
+  background: url(./images/radio-background.jpg) no-repeat;
+  background-size: cover;
+}
