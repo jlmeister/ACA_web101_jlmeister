@@ -4,109 +4,130 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Radio Coffee & Beer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Saira:400,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./radio.css">
 </head>
 <body>
-  <main>
-    <div class="parallax">    
-      <header>
-        <img src="./images/radio-logo.png" alt="Radio | Coffee & Beer logo" class="logo">
-        <ul>
-          <a href="#">
-            <li>Home</li>
-          </a>
-          <a href="#">
-            <li>Drinks</li>
-          </a>
-          <a href="#">
-            <li>Contact</li>
-          </a>
-        </ul>
-      </header>
-      <div class="parallax-hero">
-        <p>voted best coffeeshop 2016, 2017, 2018</p>
-        <p>- Austin Chronicle Reader’s Poll</p>
-      </div>
+  <div class="bg-img">
+    <header>
+      <img src="./images/radio-logo.png" alt="Radio | Coffee & Beer logo" class="logo">
+      <ul>
+        <a href="#">
+          <li class="shadow">HOME</li>
+        </a>
+        <a href="#">
+          <li class="shadow">DRINKS</li>
+        </a>
+        <a href="#">
+          <li class="shadow">CONTACT</li>
+        </a>
+      </ul>
+    </header>
+    <div class="landing-text">
+      <p class="shadow">voted best coffeeshop 2016, 2017, 2018</p>
+      <p class="shadow">- Austin Chronicle Reader’s Poll</p>
     </div>
-    <section class="gallery grid-auto">
-      <div class="gallery-item">
-        <p>Coffee</p>
+  </div>
+  <section class="gallery grid-autofit">
+  <div class="gallery-item flex latte-img">
+    <img src="./images/latte-art.jpg" alt="Latte on a table">
+    <p class="shadow">Coffee</p>
+  </div>
+  <div class="gallery-item flex cocktail-img">
+    <img src="./images/cocktail.jpg" alt="A beautiful cocktail">
+    <p class="shadow">Cocktails & Spirits</p>
+  </div>
+  <div class="gallery-item flex beer-img">
+    <img src="./images/beer-spout.jpg" alt="Pouring a beer">
+    <p class="shadow">Beer</p>
+  </div>
+  <div class="gallery-item flex event-img">
+    <img src="./images/rockband.jpg" alt="Rock band playing a concert">
+    <p class="shadow">Events</p>
+  </div>
+</section>
+<section class="events flex column-view">
+  <article class="article-format">
+    <h1 class="headline shadow">Trivia 512</h1>
+    <div class="copy">
+      <p class="shadow class="shadow"">No signup, just come pick up an answer sheet at 7:45pm- EVERY WEDNESDAY. 5 Rounds from 8pm-10pm.</p>
+      <p class="shadow">WINNER(s)? win a $25 gift certificate to Radio Coffee and Beer.</p>
+      <ul>
+        <li class="shadow">Jul 17, 2019</li>
+        <li class="shadow" aria-hidden="true">•</li>
+        <li class="shadow">8:00 PM – 10:00 PM</li>
+      </ul>
+    </div>
+    <img src="./images/einstein.jpg" alt="Albert Einstein at a chalkboard. Come join us for Trivia Night!">
+  </article>
+  <article class="article-format">
+    <h1 class="headline shadow">MOVING PANORAMAS // MIDCENTURY</h1>
+    <div class="copy">
+      <p class="shadow">Spacey but not alienating, loud yet still light, painting panoramic sound against a moving melodic backdrop, Moving Panoramas make dream rock from Austin, Texas.</p>
+      <p class="shadow">It all began in Brooklyn, where songwriter Leslie Sisson lived while playing in a number of touring bands. She came back to her home state of Texas to be closer to her family after navigating through a series of life changing events. This led to an array of songs that shaped the birth of the band. The debut LP One, released on Modern Outsider Records in 2015, conjured a wave of dream gaze and international acclaim.</p>
+      <ul>
+        <li class="shadow">Jul 20, 2019</li>
+        <li class="shadow" aria-hidden="true">•</li>
+        <li class="shadow">8:00 PM – 9:00 PM</li>
+      </ul>
+    </div>
+    <img src="./images/./black-outfits.jpg" alt="Portrait of the band, Moving Panoramas">
+  </article>
+  <article class="article-format">
+    <h1 class="headline shadow">SCRAPELLI</h1>
+    <div class="copy">
+      <p class="shadow">French gypsie-jazz masters play acoustic in the cafe!</p>
+      <ul>
+        <li class="shadow">Jul 21, 2019</li>
+        <li class="shadow" aria-hidden="true">•</li>
+        <li class="shadow">12:00 PM – 2:00 PM</li>
+      </ul>
+    </div>
+    <img src="./images/django-reinhardt.jpg" alt="Django Reinhardt playing guitar">
+  </article>
+</section>
+<section class="food grid-autofit">
+    <a href="https://www.veracruzallnatural.com/">
+      <div class="food-block">
+        <img src="./images/vera-name.jpg" alt="Vera Cruz - All Natural Tacos">
       </div>
-      <div class="gallery-item">
-        <p>Cocktails & Spirits</p>
+    </a>
+    <a href="https://www.veracruzallnatural.com/">
+      <div class="food-block">
+        <img src="./images/veracruz.jpg" alt="Vera Cruz - All Natural Tacos">
       </div>
-      <div class="gallery-item">
-        <p>Beer</p>
+    </a>
+    <a href="https://www.deedeeatx.com/">
+      <div class="food-block">
+        <img src="./images/deedee.jpg" alt="Dee Dee - Northern Thai Street Food">
       </div>
-      <div class="gallery-item">
-        <p>Events</p>
+    </a>
+    <a href="https://www.deedeeatx.com/">
+      <div class="food-block">
+        <img src="./images/deedee-name.jpg" alt="Dee Dee - Northern Thai Street Food">
       </div>
-    </section>
-    <section class="events flex column-view">
-      <article>
-        <h1>Trivia 512</h1>
-        <p>No signup, just come pick up an answer sheet at 7:45pm- EVERY WEDNESDAY. 5 Rounds from 8pm-10pm.</p>
-        <p>WINNER(s)? win a $25 gift certificate to Radio Coffee and Beer.</p>
-        <ul>
-          <li>Jul 17, 2019</li>
-          <li>8:00 PM – 10:00 PM</li>
-        </ul>
-        <img src="./images/einstein.jpg" alt="Albert Einstein at a chalkboard. Come join us for Trivia Night!">
-      </article>
-      <article>
-        <h1>MOVING PANORAMAS // MIDCENTURY</h1>
-        <p>Spacey but not alienating, loud yet still light, painting panoramic sound against a moving melodic backdrop, Moving Panoramas make dream rock from Austin, Texas.</p>
-        <p>It all began in Brooklyn, where songwriter Leslie Sisson lived while playing in a number of touring bands. She came back to her home state of Texas to be closer to her family after navigating through a series of life changing events. This led to an array of songs that shaped the birth of the band. The debut LP One, released on Modern Outsider Records in 2015, conjured a wave of dream gaze and international acclaim.</p>
-        <ul>
-          <li>Jul 20, 2019</li>
-          <li>8:00 PM – 9:00 PM</li>
-        </ul>
-        <img src="./images/./black-outfits.jpg" alt="Portrait of the band, Moving Panoramas">
-      </article>
-      <article>
-        <h1>SCRAPELLI</h1>
-        <p>French gypsie-jazz masters play acoustic in the cafe!</p>
-        <ul>
-          <li>Jul 21, 2019</li>
-          <li>12:00 PM – 2:00 PM</li>
-        </ul>
-        <img src="./images/django-reinhardt.jpg" alt="Django Reinhardt playing guitar">
-      </article>
-    </section>
-    <section class="food grid-auto">
-      <div class="food-truck">
-        <a href="https://www.veracruzallnatural.com/">
-          <div class="food-block"><img src="./images/vera-name.jpg" alt="Vera Cruz - All Natural Tacos"></div>
-          <div class="food-block"><img src="./images/veracruz.jpg" alt="Vera Cruz - All Natural Tacos"></div>
-        </a>
-      </div>
-      <div class="food-truck">
-        <a href="https://www.deedeeatx.com/">
-          <div class="food-block"><img src="./images/deedee.jpg" alt="Dee Dee - Northern Thai Street Food"></div>
-          <div class="food-block"><img src="./images/deedee-name.jpg" alt="Dee Dee - Northern Thai Street Food"></div>
-        </a>
-      </div>
-    </section>
-    <section class="location flex column-view">
-      <h2>RADIO COFFEE & BEER IS LOCATED AT</h2>
-      <p>4204 Manchaca Road, Austin, TX
-          Click here for directions</p>
-      <h2>HOURS</h2>
-      <p>Mon – Fri 6:30am-Midnight</p>
-      <p>Sat & Sun 7:30am – Midnight</p>
-      <img src="./images/RCB+BOLT.png" alt="Radio | Coffee & Beer logo">
-    </section>
-  </main>
+    </a>
+  </section>
+  <section class="location flex column-view">
+    <h2 class="shadow">RADIO COFFEE & BEER IS LOCATED AT</h2>
+    <p class="shadow">4204 Manchaca Road, Austin, TX</p>
+    <p class="shadow">Click here for directions</p>
+    <h2 class="shadow">HOURS</h2>
+    <p class="shadow">Mon – Fri 6:30am-Midnight</p>
+    <p class="shadow">Sat & Sun 7:30am – Midnight</p>
+    <img src="./images/RCB+BOLT.png" alt="Radio | Coffee & Beer logo">
+  </section>
   <footer class="flex column-view">
     <ul class="contact-nav">
       <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
       <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
       <li><i class="fa fa-envelope-o" aria-hidden="true"></i></li>
     </ul>
-    <p>Radio Coffee & Beer</p>
-    <p>4204 Manchaca Road, Austin, TX</p>
-    <p>(512) 394-7844</p>
-    <p>radiocoffeeandbeer@gmail.com</p>
+    <p class="left">Radio Coffee & Beer</p>
+    <p class="left">4204 Manchaca Road, Austin, TX</p>
+    <p class="right">(512) 394-7844</p>
+    <p class="right">radiocoffeeandbeer@gmail.com</p>
     <p>Website Photography by <a href="http://www.schafferworks.com/">Michael Schaffer</a> & <a href="http://jennhair.com/">Jenn Hair</a></p>
   </footer>
 </body>
