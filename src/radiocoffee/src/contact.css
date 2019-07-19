@@ -1,0 +1,143 @@
+html {
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Saira', sans-serif;
+  font-weight: 600;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background: #333;
+}
+.bg-container {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+.bg-img {
+  height: 100%;
+  width: 100%;
+  background: url(../images/milk.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(75%);
+}
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  width: 100%;
+}
+header ul {
+  display: flex;
+  padding-top: 30px;
+}
+header a + a {
+  margin-left: 2rem;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.location {
+  padding: 40px;
+}
+.location > h2 {
+  font-size: 1.125rem;
+  align-self: right;
+}
+.location button {
+  justify-self: flex-end;
+}
+.location > p {
+  font-weight: 400;
+}
+.shadow {
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.425);
+}
+.social-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.social-nav li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  background: white;
+  border-radius: 50%;
+}
+.fa {
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.social-nav li + li {
+  margin-left: 2rem;
+}
+.form-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: white;
+  padding: 40px;
+}
+.form-container h1 {
+  margin-bottom: 3rem;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.name-fields {
+  display: flex;
+  justify-content: space-between;
+}
+.field-sm {
+  width: 45%;
+}
+.form-container h1, .form-field label, .form-field input, textarea {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+.form-field label {
+  font-size: .875rem;
+  line-height: 1.5rem;
+}
+form input, textarea {
+  border: 1px solid #ccc;
+  background: #fafafa;
+  padding: .75rem;
+  font-size: 1rem;
+}
+form input:focus, textarea:focus {
+  background: white;
+}
+button {
+  padding: .5rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  background: #333;
+}
+.cancel {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  color: black;
+  cursor: pointer;
+}
