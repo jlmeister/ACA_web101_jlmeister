@@ -1,0 +1,235 @@
+html {
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Saira', sans-serif;
+  font-weight: 600;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background: #333;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+}
+header .logo {
+  width: 100%;
+}
+header ul {
+  display: flex;
+  padding-top: 40px;
+}
+header a + a {
+  margin-left: 3rem;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.bg-img {
+  height: 100vh;
+  width: 100%;
+  background: url(./images/radio-background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.landing-text {
+  position: absolute;
+  bottom: 0;
+  padding: 3rem;
+}
+.landing-text p {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.flex {
+  display: flex;
+}
+.column-view {
+  flex-direction: column;
+}
+.grid-autofit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.gallery-item {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-item img {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+.gallery-item p {
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  padding: 20px;
+}
+article {
+  padding: 40px;
+}
+.article-format {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "picture headline"
+                       "txt txt";
+  gap: 20px;
+  align-items: center;
+}
+article .headline {
+  grid-area: headline;
+}
+article .copy {
+  grid-area: txt;
+}
+article img {
+  grid-area: picture;
+  width: 100%;
+  max-width: 300px;
+}
+article ul li {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.698);
+}
+.copy p {
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+.copy ul {
+  display: flex;
+  justify-content: flex-start;
+  font-size: .875rem;
+}
+.copy ul li + li {
+  padding-left: 1rem;
+}
+.food-block img {
+  width: 100%;
+}
+.location {
+  padding: 40px;
+  align-items: center;
+  line-height: 1.5rem;
+}
+.location > h2 {
+  padding-bottom: 20px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.location > p {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+.location > p:nth-of-type(2n) {
+  padding-bottom: 40px;
+}
+.location img {
+  max-width: 250px;
+}
+footer {
+  background: white;
+  padding: 40px;
+}
+footer > *, a {
+  color: black;
+}
+footer > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+footer li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background: #333;
+}
+footer li + li {
+  margin-left: 3rem;
+}
+footer p {
+  font-size: .85rem;
+}
+footer p:nth-of-type(2n) {
+  padding-bottom: 20px;
+}
+footer p:last-of-type {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.shadow {
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.425);
+}
+@media (min-width: 600px) {
+  header {
+    flex-direction: row;
+    background: transparent;
+  }
+  header .logo {
+    width: 40%;
+    max-width: 320px;
+  }
+  header a + a {
+    margin-left: 2rem;
+  }
+  header ul {
+    padding: 0;
+    font-size: 1.25rem;
+  }
+  .grid-autofit {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .gallery-item p {
+    font-size: 1.5rem;
+  }
+  .article-format {
+    grid-template-rows: auto;
+    grid-template-columns: 300px auto;
+    grid-template-areas: "picture headline"
+                         "picture txt"
+                         ". txt";
+    align-items: flex-start;
+  }
+  article .headline {
+    font-size: 1.75rem;
+  }
+  article .copy {
+    font-size: .875rem;
+  }
+}
+@media (min-width: 800px) {
+  header ul {
+    font-size: 1.75rem;
+  }
+  .landing-text p {
+    font-size: 2.5rem;
+  }
+}

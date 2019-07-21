@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Coffee - Radio Coffee & Beer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Saira:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+  <header class="flex">
+    <img src="../images/radio-logo.png" alt="Radio | Coffee & Beer logo" class="logo">
+    <ul class="flex">
+      <a href="../radio.html">
+        <li class="shadow">HOME</li>
+      </a>
+      <a href="./drinks.html">
+        <li class="shadow">DRINKS</li>
+      </a>
+      <a href="./contact.html">
+        <li class="shadow">CONTACT</li>
+      </a>
+    </ul>
+  </header>
+  <div class="bg-container">
+    <div class="bg-img"></div>
+  </div>
+  <section class="location flex">
+    <h2 class="shadow">RADIO COFFEE & BEER IS LOCATED AT</h2>
+    <p class="shadow">4204 Manchaca Road, Austin, TX</p>
+    <p class="shadow">Click here for directions</p>
+    <h2 class="shadow">HOURS</h2>
+    <p class="shadow">Mon – Fri 6:30am-Midnight</p>
+    <p class="shadow">Sat & Sun 7:30am – Midnight</p>
+    <h2 class="right-justify shadow">(512) 394-7844</h2>
+    <h2 class="right-justify shadow">radiocoffeeandbeer@gmail.com</h2>
+    <button type="button" class="right-justify contact-button" onclick="openForm()">Contact</button>
+    <ul class="social-nav flex right-justify">
+      <li class="flex"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+      <li class="flex"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+      </ul>
+    <p class="shadow">Website Photography by <a href="http://www.schafferworks.com/">Michael Schaffer</a> & <a href="http://jennhair.com/">Jenn Hair</a></p>
+  </section>
+  <div class="form-container flex" id="form">
+    <h1>Say Hello!</h1>
+    <span class="cancel" aria-label="cancel" onclick="closeForm()">X</span>
+    <form action="">
+      <div class="name-fields flex">
+        <div class="form-field field-sm flex">
+          <label for="first-name">First Name</label>
+          <input type="text" required>
+        </div>
+        <div class="form-field field-sm flex">
+          <label for="last-name">Last Name</label>
+          <input type="text" required>
+        </div>
+      </div>
+      <div class="form-field flex">
+        <label for="email">Email Address</label>
+        <input type="email" required>
+      </div>
+      <div class="form-field flex">
+        <label for="msg-subject">Subject</label>
+        <input type="text" required>
+      </div>
+      <div class="form-field flex">
+        <label for="message">Message</label>
+        <textarea name="message" id="msg" required></textarea>
+      </div>
+      <button type="button" onclick="closeForm()">Send</button>
+    </form>
+  </div>
+</body>
+<script src="./form.js"></script>
+</html>
