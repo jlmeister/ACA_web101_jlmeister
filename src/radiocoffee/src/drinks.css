@@ -1,0 +1,260 @@
+html {
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Saira', sans-serif;
+  font-weight: 600;
+}
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: #333;
+}
+.flex {
+  display: flex;
+}
+.column-view {
+  flex-direction: column;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.shadow {
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.425);
+}
+.bg-container {
+  height: 300px;
+  width: 100%;
+}
+.bg-img {
+  height: 100%;
+  width: 100%;
+  background: url(../images/latte-table-copy.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(75%);
+}
+header {
+  flex-flow: row wrap;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+}
+header .logo {
+  width: 100%;
+}
+header ul {
+  padding-top: 40px;
+}
+header a + a {
+  margin-left: 3rem;
+}
+main {
+  padding: 80px 40px;
+}
+.image-container {
+  width: 100%;
+  height: 0;
+  padding-top: 150%;
+  background: url(../images/latte-portrait.jpg);
+  background-size: cover;
+}
+.text-container {
+  padding: 40px 0;
+}
+.text-container p, .profile-description h2, .profile-description p {
+  font-weight: 100;
+}
+main p + p {
+  padding-top: 20px;
+}
+.profile-card {
+  width: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.profile-card:first-of-type {
+  margin-bottom: 6rem;
+}
+.aspect-ratio-image {
+  width: calc(100% - 40px);
+  height: 0;
+  padding-top: calc(100% - 40px);
+}
+.image1 {
+  background: url(../images/mason-merrill.jpg) no-repeat;
+  background-size: cover;
+}
+.image2 {
+  background: url(../images/jill-fountain.jpg) no-repeat;
+  background-size: cover;
+}
+.profile-description {
+  padding: 20px;
+  width: calc(100% - 40px);
+  position: absolute;
+  bottom: -40px;
+  left: 40px;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.8);
+}
+.profile-description h2 {
+  font-size: 1.5rem;
+}
+.profile-description p {
+  font-size: .75rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+footer {
+  background: white;
+  padding: 40px;
+}
+footer > *, a {
+  color: black;
+}
+footer > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+footer li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background: #333;
+}
+footer li + li {
+  margin-left: 3rem;
+}
+footer p {
+  font-size: .85rem;
+}
+footer p:nth-of-type(2n) {
+  padding-bottom: 20px;
+}
+footer p:last-of-type {
+  text-align: center;
+}
+@media (min-width: 460px) {
+  .aspect-ratio-image {
+    width: 75%;
+    padding-top: 75%;
+  }
+  .profile-description {
+    width: calc(50% - 27px);
+    top: 20px;
+    left: unset;
+    right: 0;
+    bottom: unset;
+    padding-right: 40px;
+  }
+  .profile-description h2 {
+    font-size: 3.5vw;
+  }
+  .profile-description p {
+    font-size: 2vw;
+  }
+  .profile-card {
+    margin-bottom: 0;
+  }
+  .profile-card:first-of-type {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 600px) {
+  header {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    z-index: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header ul {
+    padding: 0;
+  }
+  header ul li {
+    font-size: 1.25rem;
+  }
+  header .logo {
+    width: 40%;
+    max-width: 320px;
+  }
+  header a + a {
+    margin-left: 2rem;
+  }
+}
+@media (min-width: 640px) {
+  main {
+    padding: 120px;
+    display: grid;
+    grid-template-columns: 4fr 3fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: "pic txt txt"
+                         "pic txt txt"
+                         "pic card1 card2";
+    column-gap: 40px;
+    row-gap: 20px;
+  }
+  .image-container {
+    grid-area: pic;
+  }
+  .text-container {
+    padding: 0;
+    grid-area: txt;
+  }
+  /* .profiles-container {
+    grid-area: cards;
+    flex-direction: row;
+  } */
+  .profile-card:first-of-type {
+    margin-bottom: 0;
+    grid-area: card1;
+  }
+  .profile-card:nth-of-type(2) {
+    grid-area: card2;
+  }
+  .aspect-ratio-image {
+    width: 90%;
+    padding-top: 90%;
+  }
+  .profile-description {
+    width: auto;
+    top: unset;
+    bottom: -20px;
+    right: -20px;
+    padding: 7%;
+  }
+  .profile-description h2 {
+    font-size: 2vw;
+  }
+  .profile-description p {
+    font-size: 1.25vw;
+    line-height: 1.25vw;
+  }
+}
+@media (min-width: 800px) {
+  header ul li {
+    font-size: 1.75rem;
+  }
+}
