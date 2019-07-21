@@ -12,12 +12,15 @@ html {
 body {
   height: 100%;
   width: 100%;
+  position: relative;
   background: #333;
+}
+.flex {
+  display: flex;
 }
 .bg-container {
   height: 300px;
   width: 100%;
-  overflow: hidden;
 }
 .bg-img {
   height: 100%;
@@ -28,21 +31,19 @@ body {
   filter: brightness(75%);
 }
 header {
-  display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   padding: 40px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 header .logo {
   width: 100%;
 }
 header ul {
-  display: flex;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 header a + a {
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 ul {
   list-style: none;
@@ -51,27 +52,29 @@ a {
   text-decoration: none;
 }
 .location {
+  flex-direction: column;
   padding: 40px;
 }
 .location > h2 {
   font-size: 1.125rem;
-  align-self: right;
-}
-.location button {
-  justify-self: flex-end;
 }
 .location > p {
   font-weight: 400;
 }
+.location p + p, h2 + h2, .social-nav {
+  padding-bottom: 2rem;
+}
+.location button {
+  width: 10rem;
+  margin-bottom: 2rem;
+}
 .shadow {
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.425);
 }
-.social-nav {
-  display: flex;
-  justify-content: flex-end;
+.right-justify {
+  align-self: flex-end;
 }
 .social-nav li {
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 3rem;
@@ -88,24 +91,26 @@ a {
   margin-left: 2rem;
 }
 .form-container {
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  display: flex;
+  display: none;
+  top: 0;
+  left: 0;
   flex-direction: column;
-  position: relative;
+  position: fixed;
+  overflow-y: hidden;
   background: white;
   padding: 40px;
+  z-index: 2;
 }
 .form-container h1 {
   margin-bottom: 3rem;
 }
 .form-field {
-  display: flex;
   flex-direction: column;
   margin-bottom: 1.5rem;
 }
 .name-fields {
-  display: flex;
   justify-content: space-between;
 }
 .field-sm {
@@ -134,10 +139,51 @@ button {
   font-weight: 400;
   background: #333;
 }
+.contact-button {
+  border: 2px solid white;
+  border-radius: 3px;
+  color: white;
+  font-weight: 200;
+  transition: all .3s ease;
+}
+.contact-button:hover {
+  background: white;
+  color: #333;
+}
 .cancel {
   position: absolute;
   top: 40px;
   right: 40px;
+  font-size: 1.125rem;
   color: black;
   cursor: pointer;
+}
+@media (min-width: 600px) {
+  header {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    z-index: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header ul {
+    padding: 0;
+  }
+  header ul li {
+    font-size: 1.25rem;
+  }
+  header .logo {
+    width: 40%;
+    max-width: 320px;
+  }
+  header a + a {
+    margin-left: 2rem;
+  }
+}
+@media (min-width: 800px) {
+  header ul li {
+    font-size: 1.75rem;
+  }
 }

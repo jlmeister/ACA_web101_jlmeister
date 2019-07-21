@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="./contact.css">
 </head>
 <body>
-  <header>
+  <header class="flex">
     <img src="../images/radio-logo.png" alt="Radio | Coffee & Beer logo" class="logo">
-    <ul>
+    <ul class="flex">
       <a href="../radio.html">
         <li class="shadow">HOME</li>
       </a>
@@ -26,51 +26,51 @@
   <div class="bg-container">
     <div class="bg-img"></div>
   </div>
-  <section class="location flex column-view">
+  <section class="location flex">
     <h2 class="shadow">RADIO COFFEE & BEER IS LOCATED AT</h2>
     <p class="shadow">4204 Manchaca Road, Austin, TX</p>
     <p class="shadow">Click here for directions</p>
     <h2 class="shadow">HOURS</h2>
     <p class="shadow">Mon – Fri 6:30am-Midnight</p>
     <p class="shadow">Sat & Sun 7:30am – Midnight</p>
-    <h2>(512) 394-7844</h2>
-    <h2>radiocoffeeandbeer@gmail.com</h2>
-    <button type="button">Contact</button>
-    <ul class="social-nav">
-      <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-      <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-      <li><i class="fa fa-envelope-o" aria-hidden="true"></i></li>
+    <h2 class="right-justify shadow">(512) 394-7844</h2>
+    <h2 class="right-justify shadow">radiocoffeeandbeer@gmail.com</h2>
+    <button type="button" class="right-justify contact-button" onclick="openForm()">Contact</button>
+    <ul class="social-nav flex right-justify">
+      <li class="flex"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+      <li class="flex"><i class="fa fa-instagram" aria-hidden="true"></i></li>
       </ul>
-    <p>Website Photography by <a href="http://www.schafferworks.com/">Michael Schaffer</a> & <a href="http://jennhair.com/">Jenn Hair</a></p>
+    <p class="shadow">Website Photography by <a href="http://www.schafferworks.com/">Michael Schaffer</a> & <a href="http://jennhair.com/">Jenn Hair</a></p>
   </section>
-  <div class="form-container">
+  <div class="form-container flex" id="form">
     <h1>Say Hello!</h1>
-    <span class="cancel">X</span>
+    <span class="cancel" aria-label="cancel" onclick="closeForm()">X</span>
     <form action="">
-      <div class="name-fields">
-        <div class="form-field field-sm">
+      <div class="name-fields flex">
+        <div class="form-field field-sm flex">
           <label for="first-name">First Name</label>
           <input type="text" required>
         </div>
-        <div class="form-field field-sm">
+        <div class="form-field field-sm flex">
           <label for="last-name">Last Name</label>
           <input type="text" required>
         </div>
       </div>
-      <div class="form-field">
+      <div class="form-field flex">
         <label for="email">Email Address</label>
         <input type="email" required>
       </div>
-      <div class="form-field">
+      <div class="form-field flex">
         <label for="msg-subject">Subject</label>
         <input type="text" required>
       </div>
-      <div class="form-field">
+      <div class="form-field flex">
         <label for="message">Message</label>
         <textarea name="message" id="msg" required></textarea>
       </div>
-      <button type="button">Send</button>
+      <button type="button" onclick="closeForm()">Send</button>
     </form>
   </div>
 </body>
+<script src="./form.js"></script>
 </html>
