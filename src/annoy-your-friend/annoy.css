@@ -1,0 +1,14 @@
+body {
+  font-size: 1.5rem;
+}
+.card {
+  width: 50% !important;
+  min-width: 286px !important;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
+}
+#face {
+  font-size: 10rem;
+}
+#anger {
+  font-size: 1rem !important;
+}
