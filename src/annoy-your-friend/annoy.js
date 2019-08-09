@@ -1,13 +1,18 @@
+// Define variables.
+// Need to get and set how angry he gets
+// as well as his verbal and nonverbal reaction
 var angerCounter = 0;
 var facialExpression = '&#x1F600';
 var reaction = "";
 
+// the function to push changes to the viewport
 function updateDisplay() {
   $('#face').html(facialExpression);
   $('#anger').text(angerCounter);
   $('#instructions').text(reaction);
 }
 
+// based on his current anger levels, how is he feeling?
 function determineMood() {
   switch (angerCounter) {
     case -150:
@@ -57,6 +62,7 @@ function determineMood() {
   }
 }
 
+// this is what happens when you hug him. He calms down.
 function calmDown() {
   if (angerCounter >= 120) {
     angerCounter = 100;
@@ -90,6 +96,11 @@ function calmDown() {
   }
 }
 
+// the logic in action. Three click events
+// and their corresponding actions:
+// adjust his anger levels,
+// determine his mood,
+// and push the info to the viewport.
 $(document).ready(function() {
 
   $('#poke').click(function() {
